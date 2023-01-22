@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="./styles/main.css">
+
+    <title>Document</title>
+</head>
+<body>
+
+    <nav>
+        <h1>Task Manager</h1>
+    </nav>
+
+
+    <main class="container">
+
+        <section class="list-container">
+            
+            <h2>List of Tasks</h2>
+
+            <button id="btn-hide">Hide Form</button>
+
+        </section>
+
+        
+
+        <section class="form-container"> 
+            
+            <h2>Enter you Task</h2>
+
+            <div class="my-form">
+                <i id="iImportant" class="main-icon fa-solid fa-arrow-down"></i>
+            </div>
+
+            <div class="my-form">
+                <label>Title</label>
+                <input id="txtTitle" type="text">
+            </div>
+
+            <div class="my-form">
+                <label>Description</label>
+                <textarea id="txtDescription" Srows="3"></textarea>
+            </div>
+
+
+            <div class="my-form">
+                <label>Due Date</label>
+                <input id="txtDueDate"  type="date">
+            </div>
+
+            <div class="my-form">
+                <label>Category</label>
+                <select id="selCategory" >
+                    <option>Self Care</option>
+                    <option>Family</option>
+                    <option>Work</option>
+                </select>
+            </div>
+
+            <div class="my-form">
+                <label>Status</label>
+                <select id="selStatus">
+                    <option>Ready</option>
+                    <option>In Progress</option>
+                    <option>Completed</option>
+                    
+                </select>
+            </div>
+            <div>
+
+                <button id="btn-save">Save Task</button>
+
+            </div>
+        </section>
+
+
+    </main>
+    
+
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+    <script src="./scripts/task.js"></script>
+    <script src="./scripts/app.js"></script>
+    
+</body>
+
+
+</html>
+
+
+<!-- Task
+    important
+
+    title
+    description (text area)
+    dueDate
+    category (work, family, personal)
+    contact
+    status  (ready, inprogress, completed, cancelled)
+-->
